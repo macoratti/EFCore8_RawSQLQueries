@@ -10,7 +10,7 @@ var resultado = await _context
 
 record ResultadoNomeado(int Id, string Nome);
 
-Recursos:
+Cenários de uso:
 
 - Escrever qualquer consulta SQL válida diretamente no código, incluindo instruções
 - complexas com joins, funções de agregação, subconsultas e outros recursos avançados.
