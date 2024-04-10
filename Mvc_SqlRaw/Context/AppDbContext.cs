@@ -24,7 +24,7 @@ public class AppDbContext : DbContext
             new Aluno { AlunoId = 2, Nome = "Maria", Cidade = "Guarujá", DataMatricula = new DateOnly(2024, 02, 10), Ativo = true, CursoId = 1 },
             new Aluno { AlunoId = 3, Nome = "Pedro", Cidade = "Guarujá", DataMatricula = new DateOnly(2024, 01, 24), Ativo = false, CursoId = 2 },
             new Aluno { AlunoId = 4, Nome = "Ana", Cidade = "Bertioga", DataMatricula = new DateOnly(2024, 03, 05), Ativo = true, CursoId = 2 },
-            new Aluno { AlunoId = 5, Nome = "Carlos", Cidade = "Santos", DataMatricula = new DateOnly(2024, 02, 10), Ativo = true, CursoId = 3 },
+            new Aluno { AlunoId = 5, Nome = "Carlos", Cidade = "Bertioga", DataMatricula = new DateOnly(2024, 02, 10), Ativo = true, CursoId = 3 },
             new Aluno { AlunoId = 6, Nome = "Mariana", Cidade = "Bertioga", DataMatricula = new DateOnly(2024, 03, 07), Ativo = false, CursoId = 3 },
             new Aluno { AlunoId = 7, Nome = "Lucas", Cidade = "Santos", DataMatricula = new DateOnly(2024, 01, 30), Ativo = true, CursoId = 4 },
             new Aluno { AlunoId = 8, Nome = "Juliana", Cidade = "Santos", DataMatricula = new DateOnly(2024, 02, 11), Ativo = true, CursoId = 4 },
