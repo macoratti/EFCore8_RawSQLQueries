@@ -1,0 +1,27 @@
+﻿@model List<Aluno>
+
+<h1>Todos os Alunos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Aluno ID</th>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>Data de Matrícula</th>
+            <th>Ativo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in Model)
+        {
+            <tr>
+                <td>@aluno.AlunoId</td>
+                <td>@aluno.Nome</td>
+                <td>@aluno.Cidade</td>
+                <td>@aluno.DataMatricula</td>
+                <td>@(aluno.Ativo ? "Sim" : "Não")</td>
+            </tr>
+        }
+    </tbody>
+</table>

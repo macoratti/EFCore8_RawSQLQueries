@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AlunoCurso>
+
+<h1>Lista de Alunos e Cursos</h1>
+
+@using (Html.BeginForm("AlunosCursos", "Alunos", FormMethod.Get))
+{
+    <div class="form-group">
+        @Html.Label("Filtrar por Cidade:")
+        @Html.DropDownList("cidadeSelecionada", new SelectList(new string[] { "", "Santos", "Guarujá", "Bertioga", "Peruíbe" }))
+        <input type="submit" value="Filtrar" class="btn btn-primary" />
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>Matrícula</th>
+            <th>Ativo</th>
+            <th>Curso</th>
+            <th>Inicio do Curso</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in Model)
+        {
+            <tr>
+                <td>@aluno.NomeAluno</td>
+                <td>@aluno.CidadeAluno</td>
+                <td>@aluno.DataMatriculaAluno</td>
+                <td>@(aluno.AlunoAtivo ? "Sim" : "Não")</td>
+                <td>@aluno.NomeCurso</td>
+                <td>@aluno.InicioCurso</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
