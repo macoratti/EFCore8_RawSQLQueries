@@ -13,7 +13,7 @@ record ResultadoNomeado(int Id, string Nome);
 Cenários de uso:
 
 - Escrever qualquer consulta SQL válida diretamente no código, incluindo instruções
-- complexas com joins, funções de agregação, subconsultas e outros recursos avançados.
+  complexas com joins, funções de agregação, subconsultas e outros recursos avançados.
 
 - Acessar tabelas, colunas ou views que não foram mapeadas para entidades no seu modelo de dados do EF Core.
 
